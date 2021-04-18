@@ -20,6 +20,7 @@ function formatData(data) {
         if (key.startsWith("strMeasure")) {
           return drink[key];
         }
+        return null;
       })
       .filter((item) => item)
       .map((key) => key.trim());
@@ -29,6 +30,7 @@ function formatData(data) {
         if (key.startsWith("strIngredient")) {
           return drink[key];
         }
+        return null;
       })
       .filter((item) => item)
       .map((key) => key.trim());
