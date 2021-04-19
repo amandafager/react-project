@@ -13,9 +13,9 @@ function SearchField(props) {
         </svg>
       </span>
       <input
-        className="p-2 sm:pr-10 pl-10 sm:pl-10 sm:p-2 border-2 border-black focus:outline-black"
+        className="p-2 sm:pr-10 pl-10 sm:p-2 border-2 border-black focus:outline-black"
         type="search"
-        placeholder="Search for a cocktail..."
+        placeholder="Search for a cocktail"
         onChange={props.handleChange}
       />
     </div>
