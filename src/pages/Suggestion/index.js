@@ -19,7 +19,7 @@ function Suggestion() {
     }
   }, [sendRequest]);
 
-  const bgColors = ["yellow-50", "red-50", "green-50", "gray-50"];
+  const bgColors = ["yellow-100", "red-100", "green-100", "gray-100"];
 
   function getRandomColor(colors) {
     return colors[Math.floor(Math.random() * colors.length)];
