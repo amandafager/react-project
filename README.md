@@ -1,4 +1,5 @@
 <img width="1189" alt="Screenshot 2021-04-19 at 18 44 51" src="https://user-images.githubusercontent.com/70512941/115273346-b6fd5780-a13f-11eb-9c66-6e4c0db5e758.png">
+
 # React project
 
 The assignment was to create a small application using React. I developed Drinks a Cocktail recipe app by using the [TheCocktailDB](https://www.thecocktaildb.com/) API.
