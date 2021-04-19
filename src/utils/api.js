@@ -14,7 +14,7 @@ function getApi(path) {
 function formatData(data) {
   const drinks = data;
 
-  const newDrinks = drinks.map((drink, index) => {
+  const newDrinks = drinks?.map((drink, index) => {
     const measures = Object.keys(drink)
       .map((key) => {
         if (key.startsWith("strMeasure")) {

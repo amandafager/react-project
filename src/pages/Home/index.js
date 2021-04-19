@@ -24,6 +24,7 @@ function Home() {
   return (
     <MainView>
       <SearchField handleChange={(e) => setSearchText(e.target.value)} />
+      <p>{drinks ? "" : "No drinks found. Enter something else!"} </p>
       <Grid>
         {drinks?.map((drink, index) => (
           <SearchItem
@@ -32,10 +33,13 @@ function Home() {
             instructions={drink.instructions}
             image={drink.image}
             bgColor={bgColors[index % bgColors.length]}
+            cardStyle="grid grid-rows-1 pb-10"
           >
             {drink.ingredients?.map((ingredient, index) => (
-              <li key={index}>
-                <span>{drink.measures[index % ingredient.length]}</span>
+              <li className="" key={index}>
+                <span className="pr-1 font-medium">
+                  {drink.measures[index % ingredient.length]}
+                </span>
                 <span>{ingredient}</span>
               </li>
             ))}

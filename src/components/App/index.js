@@ -1,6 +1,5 @@
 import React from "react";
 import { Router } from "@reach/router";
-/* import Menu from '../../components/Menu'; */
 import Home from "../../pages/Home/index.js";
 import Something from "../../pages/Something/index.js";
 import Layout from "../../components/Layout";
@@ -11,7 +10,6 @@ function App() {
     <>
       <Layout>
         <Hero />
-        {/* <Menu/> */}
         <Router>
           <Home path="/Search" />
           <Something path="/Random" />
