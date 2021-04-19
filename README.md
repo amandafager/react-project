@@ -1,4 +1,4 @@
-<img width="1189" alt="Screenshot 2021-04-19 at 18 44 51" src="https://user-images.githubusercontent.com/70512941/115273346-b6fd5780-a13f-11eb-9c66-6e4c0db5e758.png">
+<img width="1189" alt="Screenshot 2021-04-19 at 18 44 51" src="https://user-images.githubusercontent.com/70512941/115273888-6803f200-a140-11eb-8a33-ed70e6b9e3d8.png">
 
 # React project
 
