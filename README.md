@@ -13,4 +13,4 @@ The assignment was to create a small application using React. I developed Drinks
 - Should include at least one API call. And its data should be presented.
 - Needs to be uploaded and presented on Netlify or Vercel
 
-## Visit drinks here: [drinks.vercel.app/](drinks.vercel.app/)
+## Visit drinks here: [drinks.vercel.app](https://drinks.vercel.app/)
