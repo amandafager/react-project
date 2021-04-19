@@ -1,6 +1,8 @@
-# React school project
+# React project
 
-The assignment was to create a small application using React. I created Drinks a Cocktail recipe app by using the API [TheCocktailDB](https://www.thecocktaildb.com/)
+The assignment was to create a small application using React. I developed Drinks a Cocktail recipe app by using the [TheCocktailDB](https://www.thecocktaildb.com/) API.
+
+## Visit drinks here: [drinks.vercel.app/](drinks.vercel.app/) API.
 
 **List of requirements:**
 
