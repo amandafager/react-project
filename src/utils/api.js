@@ -13,7 +13,6 @@ function getApi(path) {
 
 function formatData(data) {
   const drinks = data;
-
   const newDrinks = drinks?.map((drink, index) => {
     const measures = Object.keys(drink)
       .map((key) => {
@@ -59,29 +58,3 @@ const getARandomDrink = async () => {
 };
 
 export { getApi, formatData, getARandomDrink };
-
-/* function getDrinkIngredients(drink) {
-  const ingredients = Object.keys(drink)
-    .map((key) => {
-      if (key.startsWith("strIngredient")) {
-        return drink[key];
-      }
-    })
-    .filter((item) => item)
-    .map((key) => key.trim());
-
-  return ingredients;
-}
-
-function getDrinkMeasures(drink) {
-  const measures = Object.keys(drink)
-    .map((key) => {
-      if (key.startsWith("strIngredient")) {
-        return drink[key];
-      }
-    })
-    .filter((item) => item)
-    .map((key) => key.trim());
-
-  return measures;
-} */

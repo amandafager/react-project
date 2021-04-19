@@ -19,7 +19,7 @@ function Suggestion() {
     }
   }, [sendRequest]);
 
-  const bgColors = ["yellow-50", "red-50", "green-50", "gray-50"];
+  const bgColors = ["myYellow", "red-50", "green-50", "gray-100"];
 
   function getRandomColor(colors) {
     return colors[Math.floor(Math.random() * colors.length)];
@@ -30,7 +30,7 @@ function Suggestion() {
       <Button
         text={"Get a drink suggestion"}
         handleClick={() => setSendRequest(true)}
-        buttonStyle=""
+        buttonStyle="sm:m-5"
       />
       {drinks?.map((drink, index) => (
         <SearchItem
@@ -43,7 +43,9 @@ function Suggestion() {
         >
           {drink.ingredients?.map((ingredient, index) => (
             <li key={index}>
-              <span>{drink.measures[index % ingredient.length]}</span>
+              <span className="pr-1 font-medium">
+                {drink.measures[index % ingredient.length]}
+              </span>
               <span>{ingredient}</span>
             </li>
           ))}

@@ -24,6 +24,9 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       green: colors.emerald,
+      myGreen: "#E9F5F5",
+      myYellow: "#FFF1CE",
+      myRed: "#FEF0EA",
     },
   },
 };

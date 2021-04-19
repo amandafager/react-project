@@ -19,7 +19,7 @@ function Home() {
     })();
   }, [searchText]);
 
-  const bgColors = ["yellow-50", "red-50", "green-50", "gray-50"];
+  const bgColors = ["myYellow", "myRed", "myGreen", "gray-100"];
 
   return (
     <MainView>
@@ -36,7 +36,7 @@ function Home() {
             cardStyle="grid grid-rows-1 pb-10"
           >
             {drink.ingredients?.map((ingredient, index) => (
-              <li className="" key={index}>
+              <li key={index}>
                 <span className="pr-1 font-medium">
                   {drink.measures[index % ingredient.length]}
                 </span>

@@ -7,6 +7,7 @@ function Hero() {
       <div className="flex flex-col items-center">
         <h1 className="uppercase font-thin text-3xl pb-6">Drinks</h1>
         <Logo />
+        <p className="pt-10 ">The Cocktail recipe app</p>
       </div>
       <Nav />
     </header>
