@@ -4,7 +4,7 @@ import MainView from "../../components/MainView";
 import SearchItem from "../../components/SearchItem";
 import { getARandomDrink } from "../../utils/api.js";
 
-function Something() {
+function Suggestion() {
   const [drinks, setDrinks] = React.useState([]);
   const [sendRequest, setSendRequest] = React.useState(false);
 
@@ -53,4 +53,4 @@ function Something() {
   );
 }
 
-export default Something;
+export default Suggestion;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Home from "../../pages/Home/index.js";
-import Something from "../../pages/Something/index.js";
+import Suggestion from "../../pages/Suggestion/index.js";
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 
@@ -11,8 +11,8 @@ function App() {
       <Layout>
         <Hero />
         <Router>
-          <Home path="/Search" />
-          <Something path="/Random" />
+          <Home path="/" />
+          <Suggestion path="/drink-suggestion" />
         </Router>
       </Layout>
     </>

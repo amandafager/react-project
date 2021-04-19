@@ -9,7 +9,7 @@ function Nav(props) {
     <nav className="flex justify-center pt-16 space-x-3">
       <Link
         className="text-gray-600 underline"
-        to="/Search"
+        to="/"
         getProps={isActive}
         {...props}
       >
@@ -20,7 +20,7 @@ function Nav(props) {
         className="text-gray-600 underline"
         getProps={isActive}
         {...props}
-        to="/Random"
+        to="/drink-suggestion"
       >
         Drink suggestion
       </Link>
