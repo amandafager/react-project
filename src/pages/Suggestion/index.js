@@ -30,7 +30,7 @@ function Suggestion() {
       <Button
         text={"Get a drink suggestion"}
         handleClick={() => setSendRequest(true)}
-        buttonStyle="sm:m-5"
+        buttonStyle="sm:m-5 border-1"
       />
       {drinks?.map((drink, index) => (
         <SearchItem
@@ -43,7 +43,7 @@ function Suggestion() {
         >
           {drink.ingredients?.map((ingredient, index) => (
             <li key={index}>
-              <span className="pr-1 font-medium">
+              <span className="font-medium">
                 {drink.measures[index % ingredient.length]}
               </span>
               <span>{ingredient}</span>

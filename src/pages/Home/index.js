@@ -37,7 +37,7 @@ function Home() {
           >
             {drink.ingredients?.map((ingredient, index) => (
               <li key={index}>
-                <span className="pr-1 font-medium">
+                <span className="font-medium">
                   {drink.measures[index % ingredient.length]}
                 </span>
                 <span>{ingredient}</span>

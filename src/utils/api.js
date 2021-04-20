@@ -22,7 +22,7 @@ function formatData(data) {
         return null;
       })
       .filter((item) => item)
-      .map((key) => key.trim());
+      .map((key) => key.trim() + " ");
 
     const ingredients = Object.keys(drink)
       .map((key) => {
