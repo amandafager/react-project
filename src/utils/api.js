@@ -1,19 +1,16 @@
-function getApi(path) {
+export function getApi(path) {
   const api = fetch(`${path}`)
     .then((response) => response.json())
     .then((data) => {
       return data;
-    })
-    .catch((err) => {
-      console.log("Error Reading data " + err);
     });
 
   return api;
 }
 
-function formatData(data) {
+export function formatData(data) {
   const drinks = data;
-  const newDrinks = drinks?.map((drink, index) => {
+  const newDrinks = drinks?.map((drink) => {
     const measures = Object.keys(drink)
       .map((key) => {
         if (key.startsWith("strMeasure")) {
@@ -48,13 +45,11 @@ function formatData(data) {
   return newDrinks;
 }
 
-const getARandomDrink = async () => {
+export async function getARandomDrink() {
   const apiData = await getApi(
     "https://www.thecocktaildb.com/api/json/v1/1/random.php"
   );
   const newDrinks = await formatData(apiData.drinks);
 
   return newDrinks;
-};
-
-export { getApi, formatData, getARandomDrink };
+}

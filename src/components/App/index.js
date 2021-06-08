@@ -5,7 +5,7 @@ import Suggestion from "../../pages/Suggestion/index.js";
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 
-function App() {
+export default function App() {
   return (
     <>
       <Layout>
@@ -18,5 +18,3 @@ function App() {
     </>
   );
 }
-
-export default App;

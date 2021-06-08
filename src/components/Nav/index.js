@@ -1,31 +1,23 @@
 import { Link } from "@reach/router";
 
-const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: "underline text-gray-900 font-bold" } : {};
-};
+export default function Nav() {
+  function isActive({ isCurrent }) {
+    return isCurrent ? { className: "underline text-gray-900 font-bold" } : {};
+  }
 
-function Nav(props) {
   return (
     <nav className="flex justify-center pt-16 space-x-3">
-      <Link
-        className="text-gray-600 underline"
-        to="/"
-        getProps={isActive}
-        {...props}
-      >
-        Search drinks
+      <Link className="text-gray-600 underline" to="/" getProps={isActive}>
+        Search
       </Link>
       <div>/</div>
       <Link
         className="text-gray-600 underline"
-        getProps={isActive}
-        {...props}
         to="/drink-suggestion"
+        getProps={isActive}
       >
-        Drink suggestion
+        Get a suggestion
       </Link>
     </nav>
   );
 }
-
-export default Nav;

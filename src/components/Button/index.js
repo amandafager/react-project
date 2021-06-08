@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Button(props) {
+export default function Button(props) {
   return (
     <button
       onClick={props.handleClick}
@@ -17,5 +17,3 @@ Button.propTypes = {
   buttonStyle: PropTypes.string,
   text: PropTypes.string,
 };
-
-export default Button;

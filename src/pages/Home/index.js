@@ -3,14 +3,15 @@ import SearchField from "../../components/SearchField";
 import SearchItem from "../../components/SearchItem";
 import MainView from "../../components/MainView";
 import Grid from "../../components/Grid";
+import Ingredient from "../../components/Ingredient";
 import { getApi, formatData } from "../../utils/api.js";
 
-function Home() {
+export default function Home() {
   const [searchText, setSearchText] = React.useState("Gin");
   const [drinks, setDrinks] = React.useState([]);
 
   React.useEffect(() => {
-    (async () => {
+    (async function () {
       const apiData = await getApi(
         `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchText}`
       );
@@ -24,7 +25,9 @@ function Home() {
   return (
     <MainView>
       <SearchField handleChange={(e) => setSearchText(e.target.value)} />
-      <p>{drinks ? "" : "No drinks found. Enter something else!"} </p>
+      {!drinks && (
+        <p className="pt-5">No cocktails found. Enter something else!</p>
+      )}
       <Grid>
         {drinks?.map((drink, index) => (
           <SearchItem
@@ -36,12 +39,11 @@ function Home() {
             cardStyle="grid grid-rows-1 pb-10"
           >
             {drink.ingredients?.map((ingredient, index) => (
-              <li key={index}>
-                <span className="font-medium">
-                  {drink.measures[index % ingredient.length]}
-                </span>
-                <span>{ingredient}</span>
-              </li>
+              <Ingredient
+                key={index}
+                measure={drink.measures[index % ingredient.length]}
+                ingredient={ingredient}
+              />
             ))}
           </SearchItem>
         ))}
@@ -49,5 +51,3 @@ function Home() {
     </MainView>
   );
 }
-
-export default Home;
