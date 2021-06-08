@@ -25,7 +25,6 @@ export default function Suggestion() {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
-  //lg:w-1/3
   return (
     <MainView>
       <Button
