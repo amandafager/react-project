@@ -25,6 +25,7 @@ export default function Suggestion() {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
+  //lg:w-1/3
   return (
     <MainView>
       <Button
@@ -39,7 +40,7 @@ export default function Suggestion() {
           instructions={drink.instructions}
           image={drink.image}
           bgColor={getRandomColor(bgColors)}
-          cardStyle="sm:w-80 lg:w-1/3 mt-16"
+          cardStyle="sm:w-80 mt-16 pb-16"
         >
           {drink.ingredients?.map((ingredient, index) => (
             <Ingredient
