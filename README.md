@@ -2,7 +2,7 @@
 
 # React project
 
-The assignment was to create a small application built in ReactJS. By using the [TheCocktailDB](https://www.thecocktaildb.com/) API, I developed Drinks, a cocktail recipe app where users can search for cocktails and get a random cocktail suggestion.
+School project in React. The assignment was to create a small application built in ReactJS. By using the [TheCocktailDB](https://www.thecocktaildb.com/) API, I developed Drinks, a cocktail recipe app where users can search for cocktails and get a random cocktail suggestion.
 
 ### [Visit the application here: drinks.vercel.app](https://drinks.vercel.app/)
 
