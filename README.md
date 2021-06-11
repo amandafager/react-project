@@ -6,8 +6,6 @@ The assignment was to create a small application built in ReactJS. By using the 
 
 ### [Visit the application here: drinks.vercel.app](https://drinks.vercel.app/)
 
-<br>
-
 **List of requirements:**
 
 - It should be built in ReactJS
@@ -18,8 +16,6 @@ The assignment was to create a small application built in ReactJS. By using the 
 - Should include both stateless and stateful components and should use state and props.
 - Should include at least one API call. And its data should be presented.
 - Needs to be uploaded and presented on Netlify or Vercel.
-
-<br>
 
 # Installation
 
@@ -46,8 +42,6 @@ npm run start
 ```
 
 4. Open [http://localhost:3000 ](http://localhost:3000) in your browser
-
-<br>
 
 # License
 
